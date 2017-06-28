@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     
+
+    <div style="height:40px;background-color:darkgreen">
+        <label style="font-size:20px;padding-top:5px;padding-left:40px"  ><span> HealthCare & Pharma solutions</span></label>
+    </div>
+  
+    <div style="height:400px;" id="image" >
+        <div style="padding-left:100px;padding-top:200px; color:black">
+            <h3><b>Get any medicine delivered in 24 hours</b></h3>
+            <p>The MiPill app matches you to nearby MIpill pharmacies so <br />that you can pickup your medicines within 24 hours or <br /> you can get your medicines delivered to your home</p>
+             
+          <br />
+            &nbsp;
+            &nbsp;
+            &nbsp;
+           @Html.ActionLink("Order Med Now >", "Index","Resident", null, new { @class = "btn btn-secondary" })
+        </div>
+        
+        
+    </div>
+
+    <div style="padding-left:150px">
+
+        <table style="width:800px;">
+
+            <tr style="height:100px">
+                <td>
+                    <input type="image" src="~/Images/dollar.JPG " style="height:150px;width:150px; border-style:none"/>
+                </td>
+                <td>
+                    <input type="image" src="~/Images/store.JPG" style="height:150px;width:150px;border-style:none"/>
+                </td>
+                <td>
+                    <input type="image" src="~/Images/van.JPG"style="height:150px;width:150px;border-style:none" />
+                </td>
+            </tr>
+            <tr style="height:100px">
+                <td>
+                    <p>Ordering with MIpill costs less than other pharmacies, which makes getting around wallet friendly</p>
+                </td>
+                <td>
+                    <p>MIpill stores are strategically distributed. So any medicine can be  shipped to any other store, on demand</p>
+                </td>
+                <td>
+                    <p>Count on MIpill to ship your medicines to cities and villges all over India</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+

@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+ @Styles.Render("~/Content/css")
+
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div  >
+
+     
+
+    <div style="height:40px;background-color:darkgreen">
+        <label style="font-size:20px;padding-top:5px;padding-left:40px"  ><span> HealthCare & Pharma solutions</span></label>
+    </div>
+  
+    <div style="height:400px;" id="image" >
+        <div style="padding-left:100px;padding-top:300px">
+            <table>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Residents >", "Index","Resident", null, new { @class = "btn btn-secondary" })
+                    </td>
+                    <td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                        <td>
+                        @Html.ActionLink("Pharmacists >", "Index","PharmaStore", null, new { @class = "btn btn-secondary" })
+                    </td>
+                </tr>
+            </table>
+             
+        </div>
+        
+        
+    </div>
+   
+
+    <div >
+        &nbsp;
+    </div>
+     <div>
+         <div>
+        &nbsp;
+    </div>
+       
+    </div>
+</div>

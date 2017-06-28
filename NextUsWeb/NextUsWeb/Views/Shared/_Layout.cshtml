@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        
+        @Styles.Render("~/Content/css")
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
+    </head>
+    <body>
+        <header>
+            <div style="margin-left:75px;margin-right:75px;height:75px">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="image" style="border-style:none;height:70px" id="logo" src="~/Images/Logo_edited.jpg" onclick="location.href ='@Url.Action("index", "Home")';"/>
+                        </td>
+                        <td>
+                             <nav>
+                        <ul id="menu">
+                            <li><b>@Html.ActionLink("Home", "Index", "Home")</b></li>
+                            <li><b>@Html.ActionLink("Products", "Products", "Home")</b></li>
+                            
+                            <li><b>@Html.ActionLink("Support", "Support", "Home")</b></li>
+                        </ul>
+                    </nav>
+                        </td>
+                       
+                        
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            &nbsp;
+                        </td>
+                        <td>
+                            
+                          
+                          @* <input type="search" id="search" class="glyphicon glyphicon-search"  placeholder="Search NextUs" /><span class="glyphicon glyphicon-search"></span></input>*@
+                        <div class="input-group">
+                          <span class="input-group-addon " id="search-query"><span class="glyphicon glyphicon-search"></span></span>
+                          <input type="text" class="form-control" aria-describedby="search-query" placeholder="Search NextUs..">
+                        </div>
+
+                            @*<div class="col-sm-6">
+                              <div class="right-inner-addon">
+                                <i class="icon-search"></i>
+                                <input type="search" class="form-control" placeholder="Search.." />
+                              </div>
+                            </div>*@
+                        
+                        </td>
+                    </tr>
+                </table>
+                @*<div class="float-left">
+                     
+                </div>
+                <div style="margin-right:600px;margin-top:10px" >
+                    
+                   
+                </div>*@
+            </div>
+        </header>
+        <div style="margin-left:75px;margin-right:75px" id="body">
+            @RenderSection("featured", required: false)
+            <section >
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div style="margin-left:75px;margin-right:75px">
+                <div style="background-color:red;color:white">
+                    <table style="width:800px;margin-left:150px; font-size:small;border-spacing:10px;">
+                         <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>LEARN</b>
+                            </td>
+                            <td>
+                                <b> DOWNLOADS</b>
+                            </td>
+                            <td>
+                               <b> VALUES</b>
+                            </td>
+                             <td>
+                               <b> COMPANY</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                MIpill
+                            </td>
+                            <td>
+                                 MIpill
+                            </td>
+                            <td>
+                                Diversity and inclusion
+                            </td>
+                             <td>
+                                Partnerships
+                            </td>
+                         </tr>
+                          <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                 &nbsp;
+                            </td>
+                            <td>
+                                Accessibility
+                            </td>
+                             <td>
+                                Business
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                 &nbsp;
+                            </td>
+                            <td>
+                                Privacy at ELIKZR
+                            </td>
+                             <td>
+                                Developers
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                 &nbsp;
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                             <td>
+                                Careers
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                 &nbsp;
+                            </td>
+                            <td>
+                                 &nbsp;
+                            </td>
+                             <td>
+                                Investors
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                &nbsp;
+                            </td>
+                            <td>
+                                 &nbsp;
+                            </td>
+                            <td>
+                                 &nbsp;
+                            </td>
+                             <td>
+                                Research
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
